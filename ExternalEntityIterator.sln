@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExternalEntityIterator", "ExternalEntityIterator\ExternalEntityIterator.vcxproj", "{33B237FE-190B-491C-80A0-333FBF48E362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33B237FE-190B-491C-80A0-333FBF48E362}.Release|x64.ActiveCfg = Release|x64
+		{33B237FE-190B-491C-80A0-333FBF48E362}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
