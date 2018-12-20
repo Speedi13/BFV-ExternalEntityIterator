@@ -14,7 +14,6 @@ Iterating over all ClientSoldierEntity entities
 
 ## Main code
 ```cpp
-template <class T> 
 class EntityIterator
 {
 public:
