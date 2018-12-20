@@ -35,8 +35,7 @@ namespace fb
 			return (T*)( DecryptPointer( (_QWORD)this->m_encryptedPtr, (_QWORD)this->m_pointerKey ) );
 		}
 	};
-
-	template <class T> 
+	
 	class EntityIterator
 	{
 	public:
