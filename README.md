@@ -34,10 +34,10 @@ _QWORD ClassInfo = OFFSET_ClientSoldierEntityClassInfo;
 
 _QWORD EntityList = GetEntityList( ClassInfo, GameWorldOffset );
 
-fb::EntityIterator<_QWORD> iterator = {};
-RPM->Read( EntityList, &iterator, sizeof(fb::EntityIterator<_QWORD>) );
+fb::EntityIterator iterator = {};
+RPM->Read( EntityList, &iterator, sizeof(fb::EntityIterator) );
 
-fb::EntityIterator<_QWORD>::Element* pElement = iterator.m_pFirst.GetPtr();
+fb::EntityIterator::Element* pElement = iterator.m_pFirst.GetPtr();
 printf("\n\nFirst Element: 0x%I64X\n\n",pElement);
 if (ValidPointer(pElement))
 {
@@ -45,7 +45,7 @@ if (ValidPointer(pElement))
 	int cntr = 0;
 	do
 	{
-		RPM->Read( (_QWORD)pElement, &iterator, sizeof(fb::EntityIterator<_QWORD>) );
+		RPM->Read( (_QWORD)pElement, &iterator, sizeof(fb::EntityIterator) );
 		
 		_QWORD Entity = (_QWORD)(pElement) - 0x50;
 		printf("[%u] Element = 0x%I64X\n", cntr, pElement);
