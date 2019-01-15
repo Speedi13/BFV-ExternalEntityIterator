@@ -1,10 +1,10 @@
 #pragma once
 
-#define OFFSET_CLIENTGAMECONTEXT 0x1443E0D80
-#define OFFSET_ObfuscationMgr 0x144057520
+#define OFFSET_CLIENTGAMECONTEXT 0x1443FEC80
+#define OFFSET_ObfuscationMgr 0x1440BBA90
 
 //struct fb::ClientSoldierEntityClassInfo *fb__ClientSoldierEntity__c_TypeInfo;
-#define OFFSET_ClientSoldierEntityClassInfo 0x1449E95D0
+#define OFFSET_ClientSoldierEntityClassInfo 0x144A5A880
 
 #define ValidPointer( pointer ) ( pointer != NULL && (DWORD_PTR)pointer >= 0x10000 && (DWORD_PTR)pointer < 0x000F000000000000 )
 
